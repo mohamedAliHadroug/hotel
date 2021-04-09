@@ -21,6 +21,13 @@ const Topnav = () => {
         Home
       </Link>
       {auth !== null && (
+
+          <Link className="nav-link" to="/dashboard">
+            Dashboard
+          </Link>
+
+      )}
+      {auth !== null && (
         <a className="nav-link" onClick={logout} style={{cursor: 'pointer'}}>
           Logout
         </a>

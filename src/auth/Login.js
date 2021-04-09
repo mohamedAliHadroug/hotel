@@ -19,7 +19,7 @@ const Login = ({ history }) => {
         window.localStorage.setItem("auth", JSON.stringify(res.data));
         // save user and token to redux
         dispatch({ type: "LOGGED_IN_USER", payload: res.data });
-        history.push("/");
+        history.push("/dashboard");
       }
     } catch (err) {
       console.log(err);
